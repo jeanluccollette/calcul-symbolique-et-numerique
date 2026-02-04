@@ -11,3 +11,9 @@ $m$ à son extrémité. Sa position angulaire par rapport à la verticale (dirig
 $\phi^{(1)}$ et l'accélération $\phi^{(2)}$.
 
 L'accélération de la pesanteur est notée $g$.
+
+## Principe fondamental de la dynamique appliqué au pendule et au chariot
+
+$$g \\sin{\\left(\\phi \\right)} + l \\phi^{(2)} + x^{(2)} \\cos{\\left(\\phi \\right)} = 0$$
+
+$$- F - l m \\left(\\phi^{(1)}\\right)^{2} \\sin{\\left(\\phi \\right)} + l m \\phi^{(2)} \\cos{\\left(\\phi \\right)} + x^{(2)} \\left(M + m\\right) = 0$$

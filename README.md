@@ -43,4 +43,4 @@ $$\dfrac{d\vec{y}}{dt}=f(\vec{y},F)$$
 Le but est maintenant de
 
 - mettre en forme l'équation d'état avec les outils de calcul symbolique du package **sympy**
-- exploiter les résultats du calcul symbolique pour simuler numériquement le système
+- exploiter les résultats du calcul symbolique pour simuler numériquement le système, via la fonction **solve_ivp** du package **scipy**

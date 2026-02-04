@@ -33,3 +33,7 @@ x\\
 x^{(1)}\\
 \phi^{(1)}
 \end{pmatrix}$$
+
+L'équation  d'évolution se présentera sous la forme
+
+$$\dfrac{d\vec{y}}{dt}=f(\vec{y},F)$$

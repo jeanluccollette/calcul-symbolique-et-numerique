@@ -74,6 +74,15 @@ display(Math(sp.latex(EQC)+' = 0'))
 
 ### Principe suivi
 
-L'idée est ensuite d'accéder progressivement aux expressions de $x^{(2)}$ et $\phi^{(2)}$ ne faisant intervenir que
+L'idée est ensuite d'accéder progressivement aux expressions de $x^{(2)}$ (variable D2X) et $\phi^{(2)}$ (variable D2PHI) ne faisant intervenir que
 les composantes du vecteur d'état $\vec{y}$ et la force $F$, via la fonction **solve** et la méthode **subs** de **sympy**.
+
+### Interface avec les appliation numériques
+
+```python
+D2X_NUM = sp.lambdify([phi, dx, dphi, F, g, l, m, M], D2X, 'numpy')
+D2PHI_NUM = sp.lambdify([phi, dx, dphi, F, g, l, m, M], D2PHI, 'numpy')
+```
+
+
 

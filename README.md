@@ -15,6 +15,10 @@ L'accélération de la pesanteur est notée $g$.
 ## Principe fondamental de la dynamique appliqué au pendule et au chariot
 
 Le principe appliqué au pendule seul, après projection sur un axe normal au pendule, donne une première équation.
+
 $$g \\sin{\\left(\\phi \\right)} + l \\phi^{(2)} + x^{(2)} \\cos{\\left(\\phi \\right)} = 0$$
+
+Le principe appliqué au chariot, prenant en compte la composante horizontale de la force de réaction du pendule sur le chariot, donne
+une seconde équation.
 
 $$- F - l m \\left(\\phi^{(1)}\\right)^{2} \\sin{\\left(\\phi \\right)} + l m \\phi^{(2)} \\cos{\\left(\\phi \\right)} + x^{(2)} \\left(M + m\\right) = 0$$

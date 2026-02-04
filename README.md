@@ -49,7 +49,7 @@ Le but est maintenant de
 
 ### Définition des symboles
 
-Dans le [notebook](pendule_chariot_sym.ipynb) fourni, les symboles s'afficheront conformément aux notations initialement choisies.
+Dans le [notebook](chariot_pendule_sym.ipynb) fourni, les symboles s'afficheront conformément aux notations initialement choisies.
 
 ```python
 import sympy as sp

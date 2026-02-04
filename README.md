@@ -100,5 +100,9 @@ dans un format similaire à celui qui est obtenu avec un code écrit en **latex*
 
 Le [programme](chariot_pendule_sym.py) fourni reprend juste les étapes essentielles. 
 
+```python
+```
+
+
 
 

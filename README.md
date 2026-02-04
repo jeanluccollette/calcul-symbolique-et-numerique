@@ -22,3 +22,14 @@ Le principe appliqué au chariot, prenant en compte la composante horizontale de
 une seconde équation.
 
 $$- F - l m \\left(\\phi^{(1)}\\right)^{2} \\sin{\\left(\\phi \\right)} + l m \\phi^{(2)} \\cos{\\left(\\phi \\right)} + x^{(2)} \\left(M + m\\right) = 0$$
+
+## Equation d'état
+
+L'état du système complet peut être décrit par le vecteur d'état 
+
+$$\vec{y}=\begin{pmatrix}
+x\\
+\phi\\
+x^{(1)}\\
+\phi^{(1)}
+\end{pmatrix}$$

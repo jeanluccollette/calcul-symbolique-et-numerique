@@ -55,6 +55,7 @@ from IPython.display import display, Math
 x, phi, dx, dphi, d2x, d2phi, g, l, m, M, F = \
     sp.symbols('x, phi, x^(1}, phi^(1), x^(2), phi^(2), g, l, m, M, F')
 ```
+
 ### Equation du pendule
 
 ```python
@@ -62,4 +63,10 @@ EQP = d2x*sp.cos(phi)+l*d2phi+g*sp.sin(phi)
 display(Math(sp.latex(EQP)+' = 0'))
 ```
 
+### Equation du chariot
+
+```python
+EQC = -F + (m+M)*d2x+m*l*sp.cos(phi)*d2phi-m*l*sp.sin(phi)*dphi**2
+display(Math(sp.latex(EQP)+' = 0'))
+```
 

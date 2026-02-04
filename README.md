@@ -67,6 +67,6 @@ display(Math(sp.latex(EQP)+' = 0'))
 
 ```python
 EQC = -F + (m+M)*d2x+m*l*sp.cos(phi)*d2phi-m*l*sp.sin(phi)*dphi**2
-display(Math(sp.latex(EQP)+' = 0'))
+display(Math(sp.latex(EQC)+' = 0'))
 ```
 

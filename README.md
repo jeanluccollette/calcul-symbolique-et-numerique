@@ -90,5 +90,8 @@ Ces fonctions permettront de définir la fonction $f$ intervenant dans l'équati
 
 $$\dfrac{d\vec{y}}{dt}=f(\vec{y},F)$$
 
+Cette fonction permettra alors de mettre en oeuvre une méthode numérique de résolution de l'équation d'évolution,
+via la fonction **solve_ivp** du package **scipy**
+
 
 

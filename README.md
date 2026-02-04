@@ -75,5 +75,5 @@ display(Math(sp.latex(EQC)+' = 0'))
 ### Principe suivi
 
 L'idée est ensuite d'accéder progressivement aux expressions de $x^{(2)}$ et $\phi^{(2)}$ ne faisant intervenir que
-les composantes du vecteur d'état $\vec{y}$ et la force $F$, via la fonction $solve$ et la méthode $subs$ de **sympy**.
+les composantes du vecteur d'état $\vec{y}$ et la force $F$, via la fonction **solve** et la méthode **subs** de **sympy**.
 

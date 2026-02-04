@@ -98,7 +98,7 @@ via la fonction **solve_ivp** du package **scipy**.
 Le [notebook](chariot_pendule_sym.ipynb) fourni détaille les méthodes, en affichant par ailleurs les résultats
 dans un format similaire à celui qui est obtenu avec un code écrit en **latex**.
 
-Le programme [notebook](chariot_pendule_sym.py) fourni reprend juste les étapes essentielles. 
+Le [programme](chariot_pendule_sym.py) fourni reprend juste les étapes essentielles. 
 
 
 

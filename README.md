@@ -93,5 +93,12 @@ $$\dfrac{d\vec{y}}{dt}=f(\vec{y},F)$$
 Cette fonction permettra alors de mettre en oeuvre une méthode numérique de résolution de l'équation d'évolution,
 via la fonction **solve_ivp** du package **scipy**.
 
+## Remarques
+
+Le [notebook](chariot_pendule_sym.ipynb) fourni détaille les méthodes, en affichant par ailleurs les résultats
+dans un format similaire à celui qui est obtenu avec un code écrit en **latex**.
+
+Le programme [notebook](chariot_pendule_sym.py) fourni reprend juste les étapes essentielles. 
+
 
 

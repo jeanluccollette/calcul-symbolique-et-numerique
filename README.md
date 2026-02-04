@@ -44,3 +44,14 @@ Le but est maintenant de
 
 - mettre en forme l'équation d'état avec les outils de calcul symbolique du package **sympy**
 - exploiter les résultats du calcul symbolique pour simuler numériquement le système, via la fonction **solve_ivp** du package **scipy**
+
+## Calcul symbolique
+
+### Définition des symboles
+
+```python
+import sympy as sp
+from IPython.display import display, Math
+x, phi, dx, dphi, d2x, d2phi, g, l, m, M, F = \
+    sp.symbols('x, phi, x^(1}, phi^(1), x^(2), phi^(2), g, l, m, M, F')
+```

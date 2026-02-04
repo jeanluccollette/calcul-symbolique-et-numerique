@@ -34,6 +34,13 @@ x^{(1)}\\
 \phi^{(1)}
 \end{pmatrix}$$
 
-L'équation  d'évolution se présentera sous la forme
+L'équation d'évolution se présentera sous la forme
 
 $$\dfrac{d\vec{y}}{dt}=f(\vec{y},F)$$
+
+## Utilisation de Python
+
+Le but est maintenant de
+
+- mettre en forme l'équation d'état avec les outils de calcul symbolique du package **sympy**
+- exploiter les résultats du calcul symbolique pour simuler numériquement le système

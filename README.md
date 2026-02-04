@@ -7,5 +7,5 @@ une force horizontale $F$. Sa position est une abscisse $x$, sa vitesse est not�
 (dérivée première et seconde par rapport au temps).
 
 Sous ce chariot est suspendu un pendule constitué d'une tige rigide de longueur $l$ de masse négligeable et d'une masse
-$m$ à son extrémité. Sa position angulaire par rapport à la verticale est notée $\phi$. La vitesse angulaire est notée
+$m$ à son extrémité. Sa position angulaire par rapport à la verticale (dirigée vers le bas) est notée $\phi$. La vitesse angulaire est notée
 $\phi^{(1)}$ et l'accélération $\phi^{(2)}$.

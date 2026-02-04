@@ -49,6 +49,8 @@ Le but est maintenant de
 
 ### Définition des symboles
 
+Dans le notebook, les symboles s'afficheront conformément aux notations initialement choisies.
+
 ```python
 import sympy as sp
 from IPython.display import display, Math

@@ -98,7 +98,7 @@ D2X_NUM = sp.lambdify([phi, dx, dphi, F, g, l, m, M], D2X, 'numpy')
 D2PHI_NUM = sp.lambdify([phi, dx, dphi, F, g, l, m, M], D2PHI, 'numpy')
 ```
 
-Ces fonctions permettront de définir la fonction $f$ intervenant dans l'équation d'évolution.
+Ces fonctions seront utilisées dans la fonction $f$ intervenant dans l'équation d'évolution.
 
 $$\dfrac{d\vec{y}}{dt}=f(\vec{y},F)$$
 

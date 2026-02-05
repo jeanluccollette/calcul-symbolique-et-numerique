@@ -10,8 +10,8 @@ def calcul_symb():
     EQP = d2x*sp.cos(phi)+l*d2phi+g*sp.sin(phi)
     EQC = -F + (m+M)*d2x+m*l*sp.cos(phi)*d2phi-m*l*sp.sin(phi) * dphi**2
     D2PHIX = sp.solve(EQP, d2phi)[0]
-    D2X = sp.solve(EQC.subs({(d2phi, D2PHIX)}), d2x)[0]
-    D2PHI = D2PHIX.subs({(d2x, D2X)}).simplify()
+    D2X = sp.solve(EQC.subs(d2phi, D2PHIX), d2x)[0]
+    D2PHI = D2PHIX.subs(d2x, D2X).simplify()
     D2X_F = sp.lambdify([phi, dx, dphi, F, g, l, m, M], D2X, 'numpy')
     D2PHI_F = sp.lambdify([phi, dx, dphi, F, g, l, m, M], D2PHI, 'numpy')
     return D2X_F, D2PHI_F
@@ -31,9 +31,9 @@ def calcul_nume(D2X_F, D2PHI_F):
     angleinit = 180.0-10.0
     x0, phi0, dx0, dphi0 = 0.0, angleinit*np.pi/180.0, 0.0, 0.0
     t_start, t_final = 0, 10
-    x0 = [x0, phi0, dx0, dphi0]
+    y0 = [x0, phi0, dx0, dphi0]
     sol = solve_ivp(lambda t, y: equation_dyna(y, F(t), m, M, g, l),
-                    [t_start, t_final], x0, rtol=1e-10, atol=1e-10)
+                    [t_start, t_final], y0, rtol=1e-10, atol=1e-10)
     t = sol.t.T
     y = sol.y.T
 

@@ -18,7 +18,7 @@ def calcul_symb():
 
 
 def calcul_nume(D2X_F, D2PHI_F):
-    def equation_dyna(y, F, m, M, g, l):
+    def f(y, F, m, M, g, l):
         phi, dx, dphi = y[1], y[2], y[3]
         d2x = D2X_F(phi, dx, dphi, F, g, l, m, M)
         d2phi = D2PHI_F(phi, dx, dphi, F, g, l, m, M)
@@ -32,7 +32,7 @@ def calcul_nume(D2X_F, D2PHI_F):
     x0, phi0, dx0, dphi0 = 0.0, angleinit*np.pi/180.0, 0.0, 0.0
     t_start, t_final = 0, 10
     y0 = [x0, phi0, dx0, dphi0]
-    sol = solve_ivp(lambda t, y: equation_dyna(y, F(t), m, M, g, l),
+    sol = solve_ivp(lambda t, y: f(y, F(t), m, M, g, l),
                     [t_start, t_final], y0, rtol=1e-10, atol=1e-10)
     t = sol.t.T
     y = sol.y.T

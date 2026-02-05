@@ -1,5 +1,17 @@
 # Calcul symbolique et numérique
 
+## Introduction
+
+Le package **sympy** permet de disposer de méthodes très performantes pour le calcul symbolique. Si, par
+ailleurs, elles sont utilisées dans un notebook, l'affichage des résultats s'effectue dans un format comparable
+à celui obtenu avec le langage **latex**.
+
+Pour envisager ensuite des applications numériques, la fonction **lambdify** convertit une expression
+obtenue avec **sympy** en une fonction qui remplace les symboles par des valeurs numériques.
+
+Pour illustrer ces possibilités par un exemple, la mise en équation d'un système chariot-pendule en calcul symbolique
+est détaillée. Elle est ensuite exploitée en numérique dans des environnements tels que **numpy** et **scipy**.
+
 ## Exemple choisi
 
 On considère un chariot de masse $M$ se déplaçant sans frottement, guidé par un rail horizontal. Sur ce chariot s'applique

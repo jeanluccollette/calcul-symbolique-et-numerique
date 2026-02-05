@@ -91,7 +91,7 @@ les composantes du vecteur d'état $\vec{y}$ et la force $F$, via la fonction **
 
 ### Interface avec les applications numériques
 
-Ces expressions finalement obtenues permettent de construire des fonctions qui remplaceront les symboles utilisés par des valeurs numériques.
+Ces expressions finalement obtenues permettent de construire des fonctions qui affecteront des valeurs numériques aux symboles utilisés.
 
 ```python
 D2X_NUM = sp.lambdify([phi, dx, dphi, F, g, l, m, M], D2X, 'numpy')

@@ -111,7 +111,7 @@ Le [notebook](chariot_pendule_sym.ipynb) fourni détaille les méthodes, en affi
 dans un format similaire à celui qui est obtenu avec un code écrit en **latex**.
 
 Le [programme](chariot_pendule_sym.py) fourni reprend juste les étapes essentielles. Pour réaliser
-l'interface entre le calcul symbolique et numérique et bien séparer ces calculs, une attention
+l'interface entre le calcul symbolique et numérique, et bien séparer ces calculs, une attention
 a été apportée de sorte de n'échanger que les informations strictement nécessaires et
 de n'utiliser en aucun cas des variables globales.
 

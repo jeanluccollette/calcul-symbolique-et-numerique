@@ -7,7 +7,7 @@ ailleurs, elles sont utilisées dans un notebook, l'affichage des résultats s'e
 à celui obtenu avec le langage **latex**.
 
 Pour envisager ensuite des applications numériques, la fonction **lambdify** convertit une expression
-obtenue avec **sympy** en une fonction qui affecte aux symboles des valeurs numériques.
+obtenue avec **sympy** en une fonction qui affecte des valeurs numériques aux symboles.
 
 Pour illustrer ces possibilités par un exemple, la mise en équation d'un système chariot-pendule en calcul symbolique
 est détaillée. Elle est ensuite exploitée en numérique dans des environnements tels que **numpy** et **scipy**.

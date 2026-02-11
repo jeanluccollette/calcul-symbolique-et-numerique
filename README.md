@@ -88,6 +88,11 @@ display(Math(sp.latex(EQC)+' = 0'))
 
 L'idée est ensuite d'accéder progressivement aux expressions de $x^{(2)}$ (variable **D2X**) et $\phi^{(2)}$ (variable **D2PHI**) ne faisant intervenir que
 les composantes du vecteur d'état $\vec{y}$ et la force $F$, via la fonction **solve** et la méthode **subs** de **sympy**.
+```python
+Sol = sp.solve([EQP, EQC], [d2x, d2phi])
+D2X = Sol[d2x].simplify()
+D2PHI = Sol[d2phi].simplify()
+```
 
 ### Interface avec les applications numériques
 

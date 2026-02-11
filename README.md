@@ -74,14 +74,12 @@ x, phi, dx, dphi, d2x, d2phi, g, l, m, M, F = \
 
 ```python
 EQP = d2x*sp.cos(phi)+l*d2phi+g*sp.sin(phi)
-display(Math(sp.latex(EQP)+' = 0'))
 ```
 
 ### Equation du chariot
 
 ```python
 EQC = -F + (m+M)*d2x+m*l*sp.cos(phi)*d2phi-m*l*sp.sin(phi)*dphi**2
-display(Math(sp.latex(EQC)+' = 0'))
 ```
 
 ### Principe suivi

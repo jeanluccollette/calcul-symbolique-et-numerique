@@ -9,11 +9,12 @@ def calcul_symb():
         sp.symbols('x, phi, x^(1}, phi^(1), x^(2), phi^(2), g, l, m, M, F')
     EQP = d2x*sp.cos(phi)+l*d2phi+g*sp.sin(phi)
     EQC = -F + (m+M)*d2x+m*l*sp.cos(phi)*d2phi-m*l*sp.sin(phi) * dphi**2
-    D2PHIX = sp.solve(EQP, d2phi)[0]
-    D2X = sp.solve(EQC.subs(d2phi, D2PHIX), d2x)[0]
-    D2PHI = D2PHIX.subs(d2x, D2X).simplify()
+    Sol = sp.solve([EQP, EQC], [d2x, d2phi])
+    D2X = Sol[d2x].simplify()
+    D2PHI = Sol[d2phi].simplify()
     D2X_F = sp.lambdify([phi, dx, dphi, F, g, l, m, M], D2X, 'numpy')
     D2PHI_F = sp.lambdify([phi, dx, dphi, F, g, l, m, M], D2PHI, 'numpy')
+
     return D2X_F, D2PHI_F
 
 

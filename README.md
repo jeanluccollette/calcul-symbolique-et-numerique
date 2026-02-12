@@ -4,7 +4,7 @@
 
 En Python, le package **sympy** permet de disposer de méthodes très performantes pour le calcul symbolique. Si, par
 ailleurs, elles sont utilisées dans un notebook, l'affichage des résultats s'effectue dans un format comparable
-à celui obtenu avec le langage **latex**.
+à celui obtenu avec le langage **LaTeX**.
 
 Pour envisager ensuite des applications numériques, la fonction **lambdify** convertit une expression
 obtenue avec **sympy** en une fonction qui affecte des valeurs numériques aux symboles.
